@@ -1,0 +1,9 @@
+# import Artist from './artist.graphql'
+
+type Performance {
+  artist: Artist,
+  displayName: String,
+  billingIndex: Int,
+  id: Int,
+  billing: String
+}

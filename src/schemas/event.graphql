@@ -1,0 +1,19 @@
+# import Start from './start.graphql'
+# import End from './end.graphql'
+# import Performance from './performance.graphql'
+# import Location from './location.graphql'
+# import Venue from './venue.graphql'
+
+type Event {
+  id: Int,
+  type: String,
+  uri: String,
+  displayName: String,
+  start: Start,
+  end: End,
+  performance: [Performance],
+  location: Location,
+  venue: Venue,
+  status: String,
+  ageRestriction: String
+}

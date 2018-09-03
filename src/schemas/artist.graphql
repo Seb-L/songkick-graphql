@@ -1,0 +1,12 @@
+# import Identifier from './identifier.graphql'
+# import Event from './event.graphql'
+
+type Artist {
+  uri: String,
+  displayName: String,
+  id: Int,
+  onTourUntil: String,
+  identifier: [Identifier],
+  events(per_page: Int): [Event]
+  similarArtists(artistId: Int): [Artist]
+}

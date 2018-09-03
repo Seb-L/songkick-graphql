@@ -1,0 +1,29 @@
+# import Venue from './venue.graphql'
+# import Event from './event.graphql'
+# import Artist from './artist.graphql'
+# import Location from './location.graphql'
+
+type Query {
+  venues(query: String, page: Int, per_page: Int): [Venue],
+  venue(venueId: Int): Venue,
+  event(event_id: Int): Event,
+  events(
+    artist_name: String,
+    location: String,
+    type: String,
+    artist_id: Int,
+    music_brainz_id: Int,
+    venue_id: Int,
+    metro_area_id: Int,
+    username: String,
+    reason: String,
+    min_date: String,
+    max_date: String,
+    page: Int,
+    per_page: Int,
+    order: String
+  ): [Event],
+  artists(query: String, page: Int, per_page: Int): [Artist],
+  similarArtists(artistId: Int): [Artist],
+  locationSearch(query: String, location: String, page: Int, per_page: Int): Location
+}

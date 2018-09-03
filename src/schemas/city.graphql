@@ -1,0 +1,8 @@
+# import Country from './country.graphql'
+
+type City {
+  id: Int,
+  uri: String,
+  displayName: String,
+  country: Country
+}

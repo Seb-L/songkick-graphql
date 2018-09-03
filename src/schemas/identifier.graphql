@@ -1,0 +1,5 @@
+type Identifier {
+  href: String,
+  mbid: String,
+  eventsHref: String
+}

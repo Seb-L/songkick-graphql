@@ -1,0 +1,5 @@
+type Location {
+  city: String,
+  lng: Float,
+  lat: Float
+}

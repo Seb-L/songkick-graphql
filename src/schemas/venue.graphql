@@ -1,0 +1,20 @@
+# import City from './city.graphql'
+# import MetroArea from './metro-area.graphql'
+# import Event from './event.graphql'
+
+type Venue {
+  id: Int,
+  displayName: String,
+  uri: String,
+  city: City,
+  lat: Float,
+  lng: Float,
+  street: String,
+  zip: String,
+  phone: String,
+  website: String,
+  capacity: Int,
+  description: String,
+  metroArea: MetroArea,
+  events(per_page: Int): [Event]
+}

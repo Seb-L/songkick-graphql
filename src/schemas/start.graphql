@@ -1,0 +1,5 @@
+type Start {
+  time: String,
+  date: String,
+  datetime: String
+}

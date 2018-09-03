@@ -1,0 +1,5 @@
+type End {
+  time: String,
+  date: String,
+  datetime: String
+}
